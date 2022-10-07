@@ -1,0 +1,218 @@
+:root {
+	--title-text: 'Poppins', sans-serif;
+	--accent-text: 'Lora', serif;
+  min-width: 1200px;
+	font-size: 62.5%;
+}
+
+html {
+	font-size: 1.6rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 1px dashed blue;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: #333;
+	background-color: #bebebe;
+	font-family: var(--accent-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	color: #333;
+}
+
+.mt-5 {
+	margin-top: 5rem;
+}
+
+.pt-5 {
+	padding-top: 5rem;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 3rem;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	transition: all 300ms ease;
+}
+
+.scrolled {
+	background-color: #fff;
+	filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+}
+
+.main-nav__logo {
+	position: absolute;
+	top: -200%;
+	left: 50px;
+	border-radius: 50%;
+	height: 10rem;
+	border: 1px solid #a00;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #f00;
+}
+
+.visible {
+	transition: all 300ms ease;
+	transform: translateY(140%);
+}
+
+.main-nav__list {
+	display: flex;
+	list-style: none;
+	gap: 2rem;
+	font-size: 1.6rem;
+}
+
+.main-nav > ul > li > a:link {
+	color: red;
+	text-decoration: none;
+	transition: all 300ms ease;
+}
+
+.main-nav > ul > li > a:hover {
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.8)
+}
+
+.main-header__banner__image {
+  top: 0;
+	width: 100%;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: auto;
+}
+
+.header-600-it {
+	font-family: var(--title-text);
+	font-weight: 600;
+	font-style: italic;
+}
+
+.header-400-it {
+	font-family: var(--title-text);
+	font-weight: 400;
+	font-style: italic;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about__card {
+	border: 2px dashed red;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+	border-radius: 4px;
+	padding: 2rem;
+	background:rgb(255, 255, 255);
+	margin: 5rem;
+	box-shadow: 0 0 0 15px rgb(225, 225, 225);
+	filter: drop-shadow(2px 2px 3px rgba(0, 0, 0 ,0.5));
+  min-width: 60rem;
+}
+
+.about__card > * + * {
+  margin-left: 2rem;
+}
+
+.about__card:nth-of-type(odd) {
+  margin-right: 30rem;
+}
+
+.about__card:nth-of-type(even) {
+  margin-left: 30rem;
+}
+
+.about__info {
+	max-width: 50ch;
+  height: auto;
+}
+
+.about__portrait__container {
+  width: 50ch;
+  width: 200px;
+  height: auto;
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0 ,0.5));
+  align-self: start;
+}
+
+.about__portrait {
+  width: 200px;
+  height: auto;
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.heart {
+	float: right;
+	position: relative;
+	bottom: 0;
+	right: 0;
+	height: 250px;
+	width: 250px;
+	filter: drop-shadow(1rem 1rem 1.5rem rgba(0, 0, 0, 0.5));	
+}
+
+.heart::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	background: url("../img/teresa_opal.jpg");
+	background-size: cover;
+	transform: rotate(-15deg) translateX(5px) translateY(30px);
+	clip-path: path('M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z');
+}
+
+.heart::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	background: #a00;
+	transform: rotate(-30deg) translateX(5px) translateY(30px);
+	clip-path: path('M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z');
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+
+	background:rgba(0, 0, 0 ,0.5);
+	color: #fff;
+}
+
+footer * {
+	border: 1px solid green;
+}
+
+.fab {
+	color: #fff;
+}
+
+.fab:hover {
+	color: #f00;
+}
+
