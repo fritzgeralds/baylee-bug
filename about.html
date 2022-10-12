@@ -5,8 +5,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>About - BayleeBug Designs</title>
-		<link rel="stylesheet" href="static/css/styles.css">
+		<title>BayleeBug Designs</title>
+		<link rel="stylesheet" href="static/css/index.css">
 		<link rel="preconnect" href="https://cdnjs.cloudflare.com">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,27 +19,32 @@
 		<script defer rel="javascript" src="./static/js/main.js"></script>
 	</head>
 
-	<body>
-
-		<header class="main-header" role="banner">
+	<body class="flex-col">
+		<header>
+			<div class="">
+				<div class="hero">
+					<img class="hero-img bleed" src="./static/img/banner.jpg" alt="Banner">
+				</div>
+			</div>
+		</header>
+		<main class="flex-1">
 			<nav class="main-nav">
-				<a href="./" title="Home">
-					<img class="main-nav__logo" src="./static/img/logo.jpg" alt="Logo">
-				</a>
+				<div class="main-nav__left flex-row">
+					<a href="./" title="Home">
+						<img class="main-nav__logo" src="./static/img/logo.jpg" alt="Logo">
+					</a>
+					<h1 class="main-nav__title">BayleeBug Designs</h1>
+				</div>
 				<ul class="main-nav__list">
 					<li class="main-nav__item"><a class="main-nav__link" href="./">Home</a></li>
-					<li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="https://www.etsy.com/shop/bayleebugdesigns"
+							target="_blank" rel="noopener">Store</a></li>
+					<li class="main-nav__item"><a class="main-nav__link active" href="#">About</a></li>
 					<li class="main-nav__item"><a class="main-nav__link" href="./contact.html">Contact</a></li>
 				</ul>
 			</nav>
-			<div class="main-header__banner">
-				<img class="main-header__banner__image" src="./static/img/banner.jpg" alt="Banner">
-			</div>
-		</header>
-
-		<main>
-			<section class="pt-5 wrapper">
-				<h1 class="header-600-it">Who is BayleeBug Designs?</h1>
+			<section class="container">
+				<h1 class="header-700-it">Who is BayleeBug Designs?</h1>
 				<p> As a grandmother to 5 boys and 4 girls, when little Baylee came along after the first two grandsons
 					were born, my creative juices started flowing with all the new possibilities having a girl in the family
 					meant. From
@@ -54,77 +59,72 @@
 					so I work
 					very hard on making the most beautiful and practical items from my home.
 				</p>
-				<div class="about__container mt-5">
-					<!-- <div class="about__card"> -->
-					<!-- <div> -->
-					<!-- <div class="heart"></div> -->
-					<!-- </div> -->
-					<!-- <div> -->
-					<p class="about__info">My grandmother taught me to sew as a little girl and I passed this love of sewing on to
-						my daughter. With Sarah's help I
-						opened my Etsy shop to share my passion with others. My goal is to offer affordable and unique items for
-						children to
-						enjoy.</p>
-					<!-- </div> -->
-					<!-- </div> -->
-					<div class="about__card">
-						<div class="about__info">
-							<h2 class="about__name header-400-it">Teresa</h2>
-							<p class="about__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, fugit!
-								Doloribus ut, voluptatem ducimus mollitia incidunt esse adipisci. Consectetur nobis dignissimos et
-								aperiam vero doloribus accusantium, voluptates dolorem ad consequuntur perferendis nisi amet inventore
-								incidunt. Adipisci, nam obcaecati nobis fuga quae minima harum esse amet dolore repellat? Ex dolorem
-								doloribus nostrum aperiam facilis? Recusandae consequatur labore quis maiores harum ex ut natus in
-								voluptatem molestias, ratione voluptate adipisci ipsa perspiciatis odio at dolore, atque reprehenderit?
-								Commodi laboriosam placeat soluta cum nulla explicabo mollitia? Molestiae tempora consequatur sapiente
-								porro illum deserunt ea veniam sunt perferendis quaerat. Optio, facilis consequatur. Nulla, dolorem?</p>
-						</div>
-						<div class="about__portrait__container">
-							<img src="./static/img/teresa2.jpg" alt="Teresa" class="about__portrait">
-						</div>
+			</section>
+			<section class="container bleed card__wrapper flex-col">
+				<div class="about__card flex-row">
+					<div class="about__portrait__container">
+						<img src="./static/img/teresa2.jpg" alt="Teresa"class="about__portrait">
 					</div>
-					<div class="about__card reverse">
-						<div class="about__portrait__container">
-							<img src="./static/img/sarah2.jpg" alt="Sarah" class="about__portrait">
-						</div>
-						<div class="about__info">
-							<h2 class="about__name header-400-it">Sarah</h2>
-							<p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis
-								possimus! Molestiae veritatis laudantium reiciendis natus nam quas repudiandae libero, expedita
-								consequuntur! Porro neque ipsa, officia obcaecati distinctio natus quam.</p>
-						</div>
+					<div class="about__info">
+						<h2 class="about__name header-400-it">Teresa</h2>
+						<p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis
+						possimus! Molestiae veritatis laudantium reiciendis natus nam quas repudiandae libero, expedita
+						consequuntur! Porro neque ipsa, officia obcaecati distinctio natus quam.</p>
+					</div>
+				</div>
+				<div class="about__card flex-row">
+					<div class="about__portrait__container">
+						<img src="./static/img/sarah2.jpg" alt="Sarah" height="auto" width="25%" class="about__portrait">
+					</div>
+					<div class="about__info">
+						<h2 class="about__name header-400-it">Sarah</h2>
+						<p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis
+							possimus! Molestiae veritatis laudantium reiciendis natus nam quas repudiandae libero, expedita
+							consequuntur! Porro neque ipsa, officia obcaecati distinctio natus quam.</p>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="mt-5">
-			<div class="wrapper">
-
-				<div class="footer__text">
-		
-				</div>
+<footer>
+	<div class="heart"></div>
+	<div class="container bleed flex-row">
+		<div class="footer__left">
+			<div class="footer__text">
+				<h3>BayleeBug Designs</h3>
 				<div class="footer__social">
 					<a title="Facebook" href="https://facebook.com/i-dont-have-facebook"><i class="fab fa-facebook"></i></a>
 					<a title="Instagram" href="https://instagram.com/i-dont-have-instagram"><i class="fab fa-instagram"></i></a>
 					<a title="Twitter" href="https://twitter.com/i-dont-have-twitter"><i class="fab fa-twitter"></i></a>
 				</div>
-<!--				<div class="heart"></div>-->
-<!--				<div class="heart">-->
-					<svg id="heart-svg" viewBox="0 0 250 220" preserveAspectRatio="xMinYMin meet">
-						<defs>
-							<clipPath id="clipPath" >
-								<path
-										d="M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z"/>
-							</clipPath>
-						</defs>
-						<image class="heart-img" xlink:href="./static/img/t_o.jpg" width="250"
-						       height="220" />
-					</svg>
-<!--				</div>-->
 			</div>
-		</footer>
-		
-		</body>
-		
-	</html>
+		</div>
+		<div class="footer__center">
+			<div class="footer__text">
+				
+			</div>
+		</div>
+		<div class="footer__middle">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p><span>123 Sesame Street</span> Bakersfield, CA</p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p><a href="tel:+15551234567">(555) 123-4567</a></p>
+			</div>
+
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:info@bayleebugdesigns.com">info@bayleebugdesigns.com</a></p>
+			</div>
+
+		</div>
+	</div>
+	</div>
+</footer>
+
+</body>
+
+</html>

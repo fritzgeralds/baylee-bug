@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact - BayleeBug Designs</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+    <title>BayleeBug Designs</title>
+    <link rel="stylesheet" href="static/css/index.css">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,44 +19,73 @@
     <script defer rel="javascript" src="./static/js/main.js"></script>
   </head>
 
-  <body>
-
-    <header class="main-header" role="banner">
-      <nav class="main-nav">
-        <a href="./" title="Home">
-          <img class="main-nav__logo" src="./static/img/logo.jpg" alt="Logo">
-        </a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="./">Home</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="./about.html">About</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="main-header__banner">
-        <img class="main-header__banner__image" src="./static/img/banner.jpg" alt="Banner">
+  <body class="flex-col">
+    <header>
+      <div class="">
+        <div class="hero">
+          <img class="hero-img bleed" src="./static/img/banner.jpg" alt="Banner">
+        </div>
       </div>
     </header>
-
-    <main>
+    <main class="flex-1">
+      <nav class="main-nav">
+        <div class="main-nav__left flex-row">
+          <a href="./" title="Home">
+            <img class="main-nav__logo" src="./static/img/logo.jpg" alt="Logo">
+          </a>
+          <h1 class="main-nav__title">BayleeBug Designs</h1>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="./">Home</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://www.etsy.com/shop/bayleebugdesigns" target="_blank" rel="noopener">Store</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="./about.html">About</a></li>
+          <li class="main-nav__item"><a class="main-nav__link active" href="#">Contact</a></li>
+        </ul>
+      </nav>
       <section id="wrapper">
 
       </section>
     </main>
 
-    <footer>
-      <div class="wrapper">
-        <div class="footer__text">
-        
-        </div>
+<footer>
+  <div class="heart"></div>
+  <div class="container bleed flex-row">
+    <div class="footer__left">
+      <div class="footer__text">
+        <h3>BayleeBug Designs</h3>
         <div class="footer__social">
           <a title="Facebook" href="https://facebook.com/i-dont-have-facebook"><i class="fab fa-facebook"></i></a>
           <a title="Instagram" href="https://instagram.com/i-dont-have-instagram"><i class="fab fa-instagram"></i></a>
           <a title="Twitter" href="https://twitter.com/i-dont-have-twitter"><i class="fab fa-twitter"></i></a>
         </div>
-        <div class="heart"></div>
       </div>
-    </footer>
+    </div>
+    <div class="footer__center">
+      <div class="footer__text">
 
-  </body>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>123 Sesame Street</span> Bakersfield, CA</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:info@bayleebugdesigns.com">info@bayleebugdesigns.com</a></p>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</footer>
+
+</body>
 
 </html>
