@@ -23,6 +23,7 @@ body {
 
 main {
 	min-height: min(100%, 100vh);
+	position: relative;
 }
 
 h1, h2, h3 {
@@ -67,6 +68,9 @@ h3 {
 }
 
 .scrolled {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	background-color: #fff;
 	filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
 }

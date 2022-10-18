@@ -21,6 +21,30 @@
 
   <body class="flex-col">
     <header>
+	    <nav class="main-nav">
+		    <div class="main-nav__left flex-row">
+			    <a href="./" title="Home">
+				    <img class="main-nav__logo" src="./static/img/logo.jpg" alt="Logo">
+			    </a>
+			    <h1 class="main-nav__title">BayleeBug Designs</h1>
+		    </div>
+		    <ul class="main-nav__list">
+			    <li class="main-nav__item"><a class="main-nav__link" href="./">Home</a></li>
+			    <li class="main-nav__item">
+				    <a class="main-nav__link" href="./shop/index.html">Shop</a>
+				    <ul class="main-nav__sub-list">
+					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/doll-bedding.html">Doll Bedding</a></li>
+					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/baby-toys.html">Baby Toys</a></li>
+					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/purses.html">Purses</a></li>
+					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/totes.html">Totes</a></li>
+					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/crayon-totes.html">Crayon Art Tote/Bag</a></li>
+					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/aprons.html">Aprons</a></li>
+				    </ul>
+			    </li>
+			    <li class="main-nav__item"><a class="main-nav__link" href="./about.html">About</a></li>
+			    <li class="main-nav__item"><a class="main-nav__link active" href="#">Contact</a></li>
+		    </ul>
+	    </nav>
       <div class="">
         <div class="hero">
           <img class="hero-img bleed" src="./static/img/banner.jpg" alt="Banner">
@@ -28,30 +52,6 @@
       </div>
     </header>
     <main class="flex-1">
-      <nav class="main-nav">
-        <div class="main-nav__left flex-row">
-          <a href="./" title="Home">
-            <img class="main-nav__logo" src="./static/img/logo.jpg" alt="Logo">
-          </a>
-          <h1 class="main-nav__title">BayleeBug Designs</h1>
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="./">Home</a></li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="./shop/index.html">Shop</a>
-            <ul class="main-nav__sub-list">
-              <li class="main-nav__item"><a class="main-nav__link" href="./shop/doll-bedding.html">Doll Bedding</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="./shop/baby-toys.html">Baby Toys</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="./shop/purses.html">Purses</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="./shop/totes.html">Totes</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="./shop/crayon-totes.html">Crayon Art Tote/Bag</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="./shop/aprons.html">Aprons</a></li>
-            </ul>
-          </li>
-          <li class="main-nav__item"><a class="main-nav__link" href="./about.html">About</a></li>
-          <li class="main-nav__item"><a class="main-nav__link active" href="#">Contact</a></li>
-        </ul>
-      </nav>
       <section id="wrapper">
 
       </section>
@@ -63,33 +63,55 @@
     <div class="footer__left">
       <div class="footer__text">
         <h3>BayleeBug Designs</h3>
+	      <div class="footer__contact">
+		      <div>
+			      <i class="fa fa-map-marker"></i>
+			      <p><span>123 Sesame Street</span> Bakersfield, CA</p>
+		      </div>
+
+		      <div>
+			      <i class="fa fa-phone"></i>
+			      <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+		      </div>
+
+		      <div>
+			      <i class="fa fa-envelope"></i>
+			      <p><a href="mailto:info@bayleebugdesigns.com">info@bayleebugdesigns.com</a></p>
+		      </div>
+	      </div>
         <div class="footer__social">
-          <a title="Facebook" href="https://facebook.com/i-dont-have-facebook"><i class="fab fa-facebook"></i></a>
-          <a title="Instagram" href="https://instagram.com/i-dont-have-instagram"><i class="fab fa-instagram"></i></a>
-          <a title="Twitter" href="https://twitter.com/i-dont-have-twitter"><i class="fab fa-twitter"></i></a>
+	        <a href="https://www.facebook.com/BayleeBugDesigns" target="_blank" rel="noopener noreferrer" title="Facebook">
+		        <i class="fab fa-facebook-square"></i></a>
+	        <a href="https://www.instagram.com/bayleebugdesigns/" target="_blank" rel="noopener noreferrer" title="Instagram">
+		        <i class="fab fa-instagram"></i></a>
+	        <a href="https://www.etsy.com/shop/BayleeBugDesigns" target="_blank" rel="noopener noreferrer" title="Etsy">
+		        <i class="fab fa-etsy"></i></a>
         </div>
       </div>
     </div>
-    <div class="footer__center">
-      <div class="footer__text">
-
-      </div>
+    <div class="footer__text">
+			<h3>Shop</h3>
+			<ul class="footer__list">
+				<li class="footer__item"><a class="footer__link" href="./shop/doll-bedding.html">Doll Bedding</a></li>
+				<li class="footer__item"><a class="footer__link" href="./shop/baby-toys.html">Baby Toys</a></li>
+				<li class="footer__item"><a class="footer__link" href="./shop/purses.html">Purses</a></li>
+				<li class="footer__item"><a class="footer__link" href="./shop/totes.html">Totes</a></li>
+				<li
+						class="footer__item"><a class="footer__link" href="./shop/crayon-totes.html">Crayon Art
+					Tote/Bag</a></li>
+				<li class="footer__item"><a class="footer__link" href="./shop/aprons.html">Aprons</a></li>
+			</ul>
+    </div>
+    <div class="footer__text">
+      <h3>Quick Links</h3>
+      <ul class="footer__list">
+	      <li class="footer__item"><a class="footer__link" href="./">Home</a></li>
+	      <li class="footer__item"><a class="footer__link" href="./shop/index.html">Shop</a></li>
+	      <li class="footer__item"><a class="footer__link" href="./about.html">About</a></li>
+	      <li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+      </ul>
     </div>
     <div class="footer__middle">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>123 Sesame Street</span> Bakersfield, CA</p>
-      </div>
-
-      <div>
-        <i class="fa fa-phone"></i>
-        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
-      </div>
-
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:info@bayleebugdesigns.com">info@bayleebugdesigns.com</a></p>
-      </div>
 
     </div>
   </div>

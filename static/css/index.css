@@ -38,6 +38,10 @@ body {
   min-width: 760px;
 }
 
+main {
+  box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
 /* UTILITIES */
 
 .mt-5 {
@@ -54,7 +58,7 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1600px;
   margin-inline: auto;
   padding-inline: 1rem;
 }
@@ -106,6 +110,11 @@ body {
 
 /* HEADER */
 
+.hero {
+  position: relative;
+  z-index: -1;
+}
+
 .hero-img {
   width: 100%;
   min-height: 25vmax;
@@ -125,35 +134,42 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  position: sticky;
-  top: 0;
+  /*position: sticky;*/
+  /*top: 0;*/
   padding-inline: 2em;
   border-block: 2px solid rgba(0, 0, 0, 0.2);
   z-index: 99;
+  transition: all 0.3s ease;
 }
 
 .main-nav__left {
-  gap: 12rem;
+  /*gap: 12rem;*/
   align-items: center;
   -moz-opacity: .0;
   filter: alpha(opacity=0);
-  opacity: .0;
+  opacity: 0;
 }
 
 .main-nav__logo {
   color: var(--clr-text-100);
-  font-size: 2rem;
+  font-size: 0rem;
   font-weight: 700;
   padding: 1rem;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   outline: 2px dashed var(--clr-text-accent-secondary);
   outline-offset: calc(-1rem + 2px);
   border: 2px dashed var(--clr-text-accent);
   box-shadow: inset 0 0 0 1rem white, 0 0 0 5px gray;
   top: -15px;
+}
+
+.main-nav__title {
+  font-size: 2.4rem;
+  position: relative;
+  padding-left: 120px;
 }
 
 .main-nav__list,
@@ -203,8 +219,12 @@ body {
 }
 
 .main-nav.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
   border: none;
   filter: drop-shadow(0 5px 0.5rem rgba(0, 0, 0, 0.2));
+  transform: translateY(100%) translateY(-100%);
 }
 
 .main-nav__left.visible {
@@ -243,7 +263,8 @@ body {
 
 .main-nav__list li ul li {
   clear: both;
-  width: 250px;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .main-nav__sub-list > li {
@@ -341,7 +362,7 @@ footer .footer__tag {
   color: var(--clr-text-accent-secondary)
 }
 
-.footer__middle i,
+.footer__left i,
 .footer__social i {
   background-color: var(--clr-text-accent);
   font-size: 1.8rem;
@@ -354,23 +375,28 @@ footer .footer__tag {
   vertical-align: middle;
 }
 
-.footer__middle p {
+.footer__left p {
   display: inline-block;
   vertical-align: middle;
 }
 
-.footer__middle p span {
+.footer__left p span {
   display: block;
-  line-height: 2;
+  line-height: 1;
 }
 
-.footer__middle p a {
+.footer__left p a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer__middle a:hover {
+.footer__left a:hover {
   color: var(--clr-text-accent);
+}
+
+.footer__contact {
+  margin-top: 1em;
+  margin-left: -50px;
 }
 
 .footer__social {
