@@ -59,6 +59,13 @@ body {
   padding-inline: 1rem;
 }
 
+.main-content {
+  height: 150vh;
+  width: 100%;
+  /* width: calc(100vw - 400px); */
+  background-color: var(--clr-bg-300);
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -121,8 +128,7 @@ body {
   position: sticky;
   top: 0;
   padding-inline: 2em;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-inline: none;
+  border-block: 2px solid rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
 
@@ -150,7 +156,8 @@ body {
   top: -15px;
 }
 
-.main-nav__list {
+.main-nav__list,
+.main-nav__sub-list {
   display: flex;
   list-style: none;
   align-items: center;
@@ -207,6 +214,49 @@ body {
   transition: all 1s ease;
 }
 
+.main-nav__list li {
+  position: relative;
+}
+
+.main-nav__list li ul {
+  background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.main-nav__list li:hover > ul,
+.main-nav__list li:focus-within > ul,
+.main-nav__list li ul:hover,
+.main-nav__list li ul:focus {   
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.main-nav__list li ul li {
+  clear: both;
+  width: 250px;
+}
+
+.main-nav__sub-list > li {
+  padding: 0.5rem 1rem;
+}
+
+/* ASIDE */
+.aside {
+  width: 400px;
+  background-color: var(--clr-bg-100);
+  float: right;
+}
+
 /* ABOUT */
 .card__wrapper {
   --bg-color: var(--clr-bg-100);
@@ -249,7 +299,7 @@ footer .container {
 }
 
 footer .container > * {
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
  footer h3 {
@@ -295,11 +345,11 @@ footer .footer__tag {
 .footer__social i {
   background-color: var(--clr-text-accent);
   font-size: 1.8rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.0rem;
+  height: 3.0rem;
   border-radius: 50%;
   text-align: center;
-  line-height: 3.5rem;
+  line-height: 3.0rem;
   margin: 0.5em;
   vertical-align: middle;
 }
@@ -330,11 +380,11 @@ footer .footer__tag {
 
 .fab {
   font-size: 2rem;
-  color: var(--clr-text-100);
+  color: #fff;
 }
 
 .fab:hover {
-  color: var(--clr-text-accent);
+  /* color: var(--clr-text-accent); */
 }
 
 /* CONTAINER QUERIES */
