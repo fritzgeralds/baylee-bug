@@ -279,6 +279,10 @@ footer h2 {
 	border: 1px solid green;
 }
 
+.footer__list li:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 768px) {
 	.main-header__banner__image {
 		min-height: 300px;

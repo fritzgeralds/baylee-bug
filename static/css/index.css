@@ -1,3 +1,5 @@
+@import url(../css/modal.css);
+
 :root {
   --title-text: 'Poppins', sans-serif;
   --accent-text: 'Lora', serif;
@@ -39,7 +41,7 @@ body {
 }
 
 main {
-  box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -0.25rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 /* UTILITIES */
@@ -126,6 +128,9 @@ main {
 
 
 /* MAIN */
+section.container {
+  padding-block: 5em;
+}
 
 
 /* NAVIGATION */
@@ -134,10 +139,10 @@ main {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  /*position: sticky;*/
-  /*top: 0;*/
+  /* position: sticky; */
+  /* top: 0; */
   padding-inline: 2em;
-  border-block: 2px solid rgba(0, 0, 0, 0.2);
+  /* border-block: 2px solid rgba(0, 0, 0, 0.2); */
   z-index: 99;
   transition: all 0.3s ease;
 }
@@ -315,12 +320,21 @@ footer .container {
   background-color: var(--bg-color);
   color: #fff;
   justify-content: space-evenly;
-  padding-block: 5em;
+  padding-top: 5em;
+  padding-bottom: 3em;
   align-items: flex-start;
+  gap: 10em;
 }
 
-footer .container > * {
-  /* border: 1px solid green; */
+.footer__social {
+  --bg-color: var(--clr-bg-900);
+  background-color: var(--bg-color);
+  color: #fff;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
  footer h3 {
@@ -380,28 +394,33 @@ footer .footer__tag {
   vertical-align: middle;
 }
 
-.footer__left p span {
+.footer__left p span,
+.footer__text h3 span {
   display: block;
   line-height: 1;
 }
 
-.footer__left p a {
+.footer__left p a,
+.footer__text a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer__left a:hover {
+.footer__left a:hover,
+.footer__text a:hover {
   color: var(--clr-text-accent);
 }
 
 .footer__contact {
-  margin-top: 1em;
+  margin-top: 1rem;
   margin-left: -50px;
 }
 
-.footer__social {
-  display: flex;
-  justify-content: center;
+.footer__text ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  line-height: 2;
 }
 
 .fab {
