@@ -15,20 +15,3 @@ window.addEventListener("scroll", () => {
   nav.classList.remove("scrolled");
   mainNavLeft.classList.remove("visible");
 });
-
-// window.addEventListener("click", () => {
-// 	var devtools = function () {};
-// 	devtools.toString = function () {
-// 		if (!this.opened) {
-// 			alert("Opened");
-// 		}
-// 		this.opened = true;
-// 	};
-
-// 	console.log("%c", devtools);
-// });
-// // devtools.opened will become true if/when the console is opened
-
-// window.onresize = function (event) {
-// 	$("#hero").css("width", $(window).width());
-// };

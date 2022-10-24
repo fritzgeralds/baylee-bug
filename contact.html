@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact | BayleeBug Designs</title>
-    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/styles.css">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-      rel="preload" as="style">
+      rel="preload" as="style" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet">
@@ -25,30 +25,31 @@
 
   <body class="flex-col">
     <header>
-	    <nav class="main-nav">
-		    <div class="main-nav__left flex-row">
-			    <a href="./" title="Home">
-				    <img class="main-nav__logo" src="./static/img/logo.jpg" alt="Logo">
-			    </a>
-			    <h1 class="main-nav__title header-700">BayleeBug Designs</h1>
-		    </div>
-		    <ul class="main-nav__list nav-link">
-			    <li class="main-nav__item"><a class="main-nav__link" href="./">Home</a></li>
-			    <li class="main-nav__item">
-				    <a class="main-nav__link" href="./shop/index.html">Shop</a>
-				    <ul class="main-nav__sub-list">
-					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/doll-bedding.html">Doll Bedding</a></li>
-					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/baby-toys.html">Baby Toys</a></li>
-					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/purses.html">Purses</a></li>
-					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/totes.html">Totes</a></li>
-					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/crayon-totes.html">Crayon Art Tote/Bag</a></li>
-					    <li class="main-nav__item"><a class="main-nav__link" href="./shop/aprons.html">Aprons</a></li>
-				    </ul>
-			    </li>
-			    <li class="main-nav__item"><a class="main-nav__link" href="./about.html">About</a></li>
-			    <li class="main-nav__item"><a class="main-nav__link active" href="#">Contact</a></li>
-		    </ul>
-	    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__left flex-row">
+          <a href="./" title="Home">
+            <img class="main-nav__logo" src="./static/img/logo.jpg" alt="Logo">
+          </a>
+          <h1 class="main-nav__title header-700">BayleeBug Designs</h1>
+        </div>
+        <ul class="main-nav__list nav-link">
+          <li class="main-nav__item"><a class="main-nav__link" href="./">Home</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="./shop/index.html">Shop</a>
+            <ul class="main-nav__sub-list">
+              <li class="main-nav__item"><a class="main-nav__link" href="./shop/doll-bedding.html">Doll Bedding</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./shop/baby-toys.html">Baby Toys</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./shop/purses.html">Purses</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./shop/totes.html">Totes</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./shop/crayon-totes.html">Crayon Art
+                  Tote/Bag</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./shop/aprons.html">Aprons</a></li>
+            </ul>
+          </li>
+          <li class="main-nav__item"><a class="main-nav__link" href="./about.html">About</a></li>
+          <li class="main-nav__item"><a class="main-nav__link active" href="#">Contact</a></li>
+        </ul>
+      </nav>
       <div class="">
         <div class="hero">
           <img class="hero-img bleed" src="./static/img/banner.jpg" alt="Banner">
@@ -74,7 +75,8 @@
               <label for="email">Email</label>
               <input class="contact-input" type="email" name="email" id="email" placeholder="E-mail" required>
               <label for="message">Message</label>
-              <textarea class="contact-input" name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+              <textarea class="contact-input" name="message" id="message" cols="30" rows="10" placeholder="Message"
+                required></textarea>
               <button class="contact-input" type="submit">Send</button>
           </fieldset>
         </div>
@@ -88,10 +90,11 @@
           <div class="event-card">
             <div class="event-info">
               <h3 class="header-700-it">Event Title</h3>
-              <p class="indent flex-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta quasi minus quam dignissimos voluptas molestiae velit iusto est accusantium rem.</p>
+              <p class="indent flex-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta quasi minus quam
+                dignissimos voluptas molestiae velit iusto est accusantium rem.</p>
               <p class="indent"><span class="event-desc-title">Date:</span><span class="indent">01/01/2039</span></p>
-              <p class="indent"><span class="event-desc-title">Location:</span><span class="indent">123 Sesame St</span><span
-                  class="indent">Bakersfield, CA</span></p>
+              <p class="indent"><span class="event-desc-title">Location:</span><span class="indent">123 Sesame
+                  St</span><span class="indent">Bakersfield, CA</span></p>
             </div>
             <div class="event-photo">
               <img src="https://via.placeholder.com/150/a70000" alt="Event">
@@ -100,9 +103,12 @@
           <div class="event-card">
             <div class="event-info">
               <h3 class="header-700-it">Event Title</h3>
-              <p class="indent flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam, et, fugit ut nostrum beatae quo dolores odio quas, obcaecati ea veniam! Mollitia deserunt tenetur repellendus incidunt tempore rerum beatae!</p>
+              <p class="indent flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam, et,
+                fugit ut nostrum beatae quo dolores odio quas, obcaecati ea veniam! Mollitia deserunt tenetur
+                repellendus incidunt tempore rerum beatae!</p>
               <p class="indent"><span class="event-desc-title">Date:</span><span class="indent">01/01/2039</span></p>
-              <p class="indent"><span class="event-desc-title">Location:</span><span class="indent">123 Sesame St</span><span class="indent">Bakersfield, CA</span></p>
+              <p class="indent"><span class="event-desc-title">Location:</span><span class="indent">123 Sesame
+                  St</span><span class="indent">Bakersfield, CA</span></p>
             </div>
             <div class="event-photo">
               <img src="https://via.placeholder.com/150/a70000" alt="Event">
@@ -113,8 +119,8 @@
               <h3 class="header-700-it">Event Title</h3>
               <p class="indent flex-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, odit?</p>
               <p class="indent"><span class="event-desc-title">Date:</span><span class="indent">01/01/2039</span></p>
-              <p class="indent"><span class="event-desc-title">Location:</span><span class="indent">123 Sesame St</span><span
-                  class="indent">Bakersfield, CA</span></p>
+              <p class="indent"><span class="event-desc-title">Location:</span><span class="indent">123 Sesame
+                  St</span><span class="indent">Bakersfield, CA</span></p>
             </div>
             <div class="event-photo">
               <img src="https://via.placeholder.com/150/a70000" alt="Event">
@@ -123,10 +129,11 @@
           <div class="event-card">
             <div class="event-info">
               <h3 class="header-700-it">Event Title</h3>
-              <p class="indent flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi labore quos corrupti rem rerum laudantium!</p>
+              <p class="indent flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi labore quos
+                corrupti rem rerum laudantium!</p>
               <p class="indent"><span class="event-desc-title">Date:</span><span class="indent">01/01/2039</span></p>
-              <p class="indent"><span class="event-desc-title">Location:</span><span class="indent">123 Sesame St</span><span
-                  class="indent">Bakersfield, CA</span></p>
+              <p class="indent"><span class="event-desc-title">Location:</span><span class="indent">123 Sesame
+                  St</span><span class="indent">Bakersfield, CA</span></p>
             </div>
             <div class="event-photo">
               <img src="https://via.placeholder.com/150/a70000" alt="Event">
@@ -134,69 +141,72 @@
           </div>
         </div>
     </main>
-<footer>
-  <div class="container bleed flex-row">
-    <div class="footer__left">
-      <div class="footer__text">
-        <h3>BayleeBug Designs</h3>
-        <div class="footer__contact">
-          <div>
-            <i class="fa fa-map-marker"></i>
-            <p><a class="map" href="javascript:void(0)"><span class="map">123 Sesame Street</span> Bakersfield, CA</a>
-            </p>
-          </div>
+    <footer>
+      <div class="container bleed flex-row">
+        <div class="footer__left">
+          <div class="footer__text">
+            <h3>BayleeBug Designs</h3>
+            <div class="footer__contact">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><a class="map" href="javascript:void(0)"><span class="map">123 Sesame Street</span> Bakersfield,
+                    CA</a>
+                </p>
+              </div>
 
-          <div>
-            <i class="fa fa-phone"></i>
-            <p><a href="tel:+15551234567">(555) 123-4567</a></p>
-          </div>
+              <div>
+                <i class="fa fa-phone"></i>
+                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+              </div>
 
-          <div>
-            <i class="fa fa-envelope"></i>
-            <p><a href="mailto:info@bayleebugdesigns.com">info@bayleebugdesigns.com</a></p>
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:info@bayleebugdesigns.com">info@bayleebugdesigns.com</a></p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="footer__text">
+          <h3>Shop</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="./shop/doll-bedding.html">Doll Bedding</a></li>
+            <li class="footer__item"><a class="footer__link" href="./shop/baby-toys.html">Baby Toys</a></li>
+            <li class="footer__item"><a class="footer__link" href="./shop/purses.html">Purses</a></li>
+            <li class="footer__item"><a class="footer__link" href="./shop/totes.html">Totes</a></li>
+            <li class="footer__item"><a class="footer__link" href="./shop/crayon-totes.html">Crayon Art
+                Tote/Bag</a></li>
+            <li class="footer__item"><a class="footer__link" href="./shop/aprons.html">Aprons</a></li>
+          </ul>
+        </div>
+        <div class="footer__text">
+          <h3>Quick Links</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link trigger" href="javascript:void(0)">Returns</a></li>
+            <li class="footer__item"><a class="footer__link trigger" href="javascript:void(0)">Payment</a></li>
+            <li class="footer__item"><a class="footer__link trigger" href="javascript:void(0)">Shipping</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="footer__text">
-      <h3>Shop</h3>
-      <ul class="footer__list">
-        <li class="footer__item"><a class="footer__link" href="./shop/doll-bedding.html">Doll Bedding</a></li>
-        <li class="footer__item"><a class="footer__link" href="./shop/baby-toys.html">Baby Toys</a></li>
-        <li class="footer__item"><a class="footer__link" href="./shop/purses.html">Purses</a></li>
-        <li class="footer__item"><a class="footer__link" href="./shop/totes.html">Totes</a></li>
-        <li class="footer__item"><a class="footer__link" href="./shop/crayon-totes.html">Crayon Art
-            Tote/Bag</a></li>
-        <li class="footer__item"><a class="footer__link" href="./shop/aprons.html">Aprons</a></li>
-      </ul>
-    </div>
-    <div class="footer__text">
-      <h3>Quick Links</h3>
-      <ul class="footer__list">
-        <li class="footer__item"><a class="footer__link trigger" href="javascript:void(0)">Returns</a></li>
-        <li class="footer__item"><a class="footer__link trigger" href="javascript:void(0)">Payment</a></li>
-        <li class="footer__item"><a class="footer__link trigger" href="javascript:void(0)">Shipping</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer__social bleed">
-    <h3>Follow Us</h3>
-    <div class="footer__social_links">
-      <a href="https://www.facebook.com/BayleeBugDesigns" target="_blank" rel="noopener noreferrer" title="Facebook">
-        <i class="fab fa-facebook-square"></i></a>
-      <a href="https://www.instagram.com/bayleebugdesigns/" target="_blank" rel="noopener noreferrer" title="Instagram">
-        <i class="fab fa-instagram"></i></a>
-      <a href="https://www.etsy.com/shop/BayleeBugDesigns" target="_blank" rel="noopener noreferrer" title="Etsy">
-        <i class="fab fa-etsy"></i></a>
-    </div>
-  </div>
-  <div class="modal">
-    <div class="modal-content">
-      <h2 class="modal-title">Header Text</h2>
-      <p class="modal-info">Body text will go here.</p>
-    </div>
-  </div>
-</footer>
-</body>
+      <div class="footer__social bleed">
+        <h3>Follow Us</h3>
+        <div class="footer__social_links">
+          <a href="https://www.facebook.com/BayleeBugDesigns" target="_blank" rel="noopener noreferrer"
+            title="Facebook">
+            <i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/bayleebugdesigns/" target="_blank" rel="noopener noreferrer"
+            title="Instagram">
+            <i class="fab fa-instagram"></i></a>
+          <a href="https://www.etsy.com/shop/BayleeBugDesigns" target="_blank" rel="noopener noreferrer" title="Etsy">
+            <i class="fab fa-etsy"></i></a>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <h2 class="modal-title">Header Text</h2>
+          <p class="modal-info">Body text will go here.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 
 </html>
