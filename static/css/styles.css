@@ -183,7 +183,7 @@ section.container {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 99;
+  z-index: 98;
   box-shadow: 0 0 3px 0.05rem var(--clr-text-800);
 }
 

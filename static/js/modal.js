@@ -23,7 +23,7 @@ var info = {
 	},
 };
 
-const buildModal = (event) => {
+buildModal = (event) => {
 	const modalDict = info[event.toLowerCase()];
 	const modalTitle = document.querySelector(".modal-title");
 	const modalInfo = document.querySelector(".modal-info");
@@ -32,11 +32,11 @@ const buildModal = (event) => {
 	toggleModal();
 };
 
-const toggleModal = () => {
+toggleModal = () => {
 	modal.classList.toggle("show-modal");
 };
 
-const windowOnClick = (event) => {
+windowOnClick = (event) => {
 	if (event.target.classList.contains("map")) {
 		buildModal("map");
 	}

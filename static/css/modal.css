@@ -9,7 +9,7 @@
   visibility: hidden;
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-  z-index: 90;
+  z-index: 99;
 }
 
 .modal-content {
@@ -22,6 +22,7 @@
   width: min(70ch, 90vw);
   border-radius: 0.5rem;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+  z-index: 100;
 }
 
 .show-modal {
