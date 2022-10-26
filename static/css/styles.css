@@ -777,4 +777,22 @@ footer .footer__tag {
     flex-direction: column;
     text-align: center;
   }
+
+  .about__card {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin: 0;
+    max-width: 75%;
+  }
+
+  .about__portrait__container {
+    width: min(75%, 300px);
+  }
+
+  .about__info {
+    max-width: 100%;
+  }
+
+
 }
