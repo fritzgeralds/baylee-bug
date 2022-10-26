@@ -40,6 +40,10 @@ body {
   min-width: 100%;
 }
 
+main {
+  position: relative;
+}
+
 address {
   font-style: normal;
 }
@@ -168,16 +172,18 @@ section.container {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  padding: 1rem 2rem;
+  padding: 3rem 5rem;
   border-radius: 0.5rem;
   border: 0.1rem solid var(--clr-text-800);
-  background-color: var(--clr-bg-100);
-  color: var(--clr-text-800);
+  background-image: linear-gradient(90deg, purple, rebeccapurple, hotpink, pink);
+  color: var(--clr-text-100);
   cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 99;
+  box-shadow: 0 0 10px 0.2rem var(--clr-text-800);
 }
 
 .btn:hover {
