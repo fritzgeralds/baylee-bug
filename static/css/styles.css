@@ -169,25 +169,28 @@ section.container {
 
 .btn {
   font-family: var(--title-text);
-  font-weight: 400;
+  font-weight: 800;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  padding: 3rem 5rem;
+  padding: 2rem 4rem;
   border-radius: 0.5rem;
   border: 0.1rem solid var(--clr-text-800);
-  background-image: linear-gradient(90deg, purple, rebeccapurple, hotpink, pink);
-  color: var(--clr-text-100);
+  background: linear-gradient(45deg, purple, rebeccapurple, hotpink, pink);
+  color: #fff;
   cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
-  box-shadow: 0 0 10px 0.2rem var(--clr-text-800);
+  box-shadow: 0 0 3px 0.05rem var(--clr-text-800);
 }
 
 .btn:hover {
-  background-color: var(--clr-bg-200);
+  border: 0.5rem solid firebrick;
+  box-shadow: 0 0 15px 0.2rem var(--clr-text-800);
+  font-size: 3.5rem;
 }
 
 
