@@ -19,7 +19,7 @@
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 4rem 4.5rem;
-  width: 70ch;
+  width: min(70ch, 90vw);
   border-radius: 0.5rem;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
@@ -35,8 +35,13 @@
 
 .modal-content:has(iframe) {
   padding: 1rem 1.5rem;
-  
   width: min(1600px, 90vw);
+  height: min(900px, 90vh);
+}
+
+.modal-content iframe {
+  width: calc(min(1600px, 90vw) - 3rem);
+  height: calc(min(900px, 90vh) - 2rem);
 }
 
 .modal-content ul {

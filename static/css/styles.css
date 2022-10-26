@@ -37,7 +37,11 @@ body {
   color: #333;
   min-height: 100vh;
   font-family: var(--accent-text);
-  min-width: 768px;
+  min-width: 100%;
+}
+
+address {
+  font-style: normal;
 }
 
 /* UTILITIES */
@@ -512,7 +516,6 @@ footer .container {
   padding-top: 5em;
   padding-bottom: 3em;
   align-items: flex-start;
-  gap: 10em;
 }
 
 .footer__social {
@@ -579,13 +582,15 @@ footer .footer__tag {
   vertical-align: middle;
 }
 
-.footer__left p {
+.footer__left p,
+.footer__left address {
   display: inline-block;
   vertical-align: middle;
 }
 
 .footer__left p span,
-.footer__text h3 span {
+.footer__text h3 span,
+.footer__left address span {
   display: block;
   line-height: 1;
 }
