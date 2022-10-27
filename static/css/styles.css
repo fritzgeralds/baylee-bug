@@ -22,6 +22,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -42,6 +43,10 @@ body {
 
 main {
   position: relative;
+}
+
+main:has(button.lol) {
+  padding-block: 11vmax;
 }
 
 address {
@@ -171,7 +176,7 @@ section.container {
   padding-block: 5em;
 }
 
-.btn {
+.lol {
   font-family: var(--title-text);
   font-weight: 800;
   font-size: 2rem;
@@ -191,7 +196,7 @@ section.container {
   box-shadow: 0 0 3px 0.05rem var(--clr-text-800);
 }
 
-.btn:hover {
+.lol:hover {
   border: 0.5rem solid firebrick;
   box-shadow: 0 0 15px 0.2rem var(--clr-text-800);
   font-size: 3.5rem;
