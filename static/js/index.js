@@ -9,7 +9,7 @@ genjams = () => {
 	vid.src = "https://www.dischner.me/video/lol.mp4";
 	vid.autoplay = true;
 	vid.style =
-		"position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 100; object-fit: cover;";
+		"position: absolute; top: 0; left: 0; z-index: 100; height: 100%; width: 100%; object-fit: fill;";
 	vid.addEventListener("ended", () => {
 		sad.classList.toggle("hide");
 		plz.classList.toggle("hide");
