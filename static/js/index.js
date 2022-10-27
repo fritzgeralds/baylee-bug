@@ -2,8 +2,11 @@ const lol = document.getElementById("lol");
 const plz = document.getElementById("plz-dont");
 const sad = document.getElementById("sad-face");
 const jams = new Audio("https://www.dischner.me/sounds/kiss_from_a_rose.mp3");
+const ban = document.getElementById("banner");
+const baby = document.getElementById("baby");
 
-genjams = () => {
+
+genJams = () => {
 	jams.play();
 	let vid = document.createElement("video");
 	vid.src = "https://www.dischner.me/video/lol.mp4";
@@ -26,5 +29,19 @@ genSad = () => {
 	plz.classList.toggle("hide");
 };
 
-plz.addEventListener("click", genjams);
+plz.addEventListener("click", genJams);
 sad.addEventListener("click", genSad);
+
+
+function babySharkDooDooDooDooDooDoo() {
+	if (baby.currentTime > 0) {
+		baby.pause();
+		baby.currentTime = 0;
+		return;
+	}
+	baby.play();
+};
+
+ban.addEventListener("click", babySharkDooDooDooDooDooDoo);
+
+
